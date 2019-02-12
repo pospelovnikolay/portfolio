@@ -1,4 +1,6 @@
 .navbar-nav li {
-	padding-right: 20px;
-	margin-left:auto;
+	padding-right: 20px;	
+}
+#dropdown-item:hover{
+     background-color: blue;
 }
