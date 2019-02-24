@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 	   <div class="container-fluid">
 	    <a href="#" class="navbar-brand"><img src="images/N.jpg" weight="30px", height="30px" alt="logo"></a>
@@ -26,7 +26,7 @@
                         </div>	
                     </li>     	        
 	     	        <li class="nav-item"><a href="#"class="nav-link">About</a></li>
-	     	        <li class="nav-item"><a href="#"class="nav-link">Contact</a></li>
+	     	        <li class="nav-item"><a href="#Section1"class="nav-link">Contact</a></li>
 	     	
 	              <form class="form-inline my-2 my lg-0 "><input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
 	                 <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
@@ -36,49 +36,37 @@
 	                
 	    </div> 
 	</nav>	
-    <div class="container">
-       <div class="row justify-content-center">
-           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-     	       <div class="carousel-inner">
-     		      <div class="carousel-item active">
-     			     <img class="d block w=100" src="images/nature1.jpg" alt="">
-     		      </div>
-     		      <div class="carousel-item">
-     			     <img class="d block w=100" src="images/nature2.jpg" alt="">
-     		      </div>
-     		      <div class="carousel-item">
-     			     <img class="d block w=100" src="images/nature3.jpg" alt="">
-     		      </div>
-     		      <div class="carousel-item">
-     			    <img class="d block w=100" src="images/nature4.jpg" alt="">
-     		      </div>	
-               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                 <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                 <span class="sr-only">Next</span>
-              </a>
-           </div>
-       </div>
-    </div>		
-    <!--<div class="container-fluid">
-    	<div class="row justify-content-center">
-    		<div class="col-md-10">
-    			
-    		</div>
-    		<div class="col-md-2" id="video">Тhis is my first
-    		    <div class="row">
-    		      <div class="embed-responsive embed-responsive-4by3">
-    	            <iframe class="embed-responsive-item"  width="560" height="315" src="https://www.youtube.com/embed/IAAeLQ0WLs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    	          </div>
-                </div>	
-    		</div>
+    <div class="container-fluid" id="background">
+       	<div class="row justify-content-center">
+            <img src="images/background 1.gif" class="img-fluid" alt="background">
     	</div>
-    	
-    </div>-->   
+   </div>
+   <footer class="page-footer font-small bg-dark">
+   	   <div class="container-fluid" id="Section1">
+   	      <div class="row">
+   	   	       <div class="col-sm align-self-center text-center">
+   	    	      <p>pospelov.nikolay@rambler.ru</p></br>
+                  <p>+380962725317</p>
+               </div>
+               <div class="col-sm" id="map"></div>
+               <div class="col-sm align-self-center text-justify"> 
+     	            <ul><a href="https://www.facebook.com/posyelov.mykola" target="_blank"><img src="images/facebook.png" data-toggle="tooltip" data-placement="bottom" title="Facebook"></a>
+                        <a href="https://www.instagram.com/pospelovmykola/?hl=ru"target="_blank"><img src="images/instagram.png"data-toggle="tooltip" data-placement="bottom" title="Instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCK0Mn4HE1RJ33i_T4IjZtYA?view_as=subscriber"target="_blank"><img src="images/Youtube.png"data-toggle="tooltip" data-placement="bottom" title="YouTube"></a>
+     	           </ul>
+     	      </div>
+           </div>    	 
+   	 	<script>
+   	 		function initMap() {
+   	 			var pos={lat:49.239207, lng: 28.508458 };
+   	 			var options={center:pos , zoom:18,};
+                var map = new google.maps.Map(document.getElementById("map"), options);
+   	 		     }
+   	 	</script>
+   	
+          <div class="footer-copyright text-center">2019 Copyright: by Pospelov Nikolay</div>     	
+       </div>
+   </footer>
        
 
 
@@ -88,5 +76,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNrL6QdsBKvtplgt6nN4laklshG1SINpg&callback=initMap"
+        async defer></script>
 </body>
 </html>
