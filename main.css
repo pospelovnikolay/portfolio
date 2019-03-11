@@ -4,3 +4,20 @@
 #dropdown-item:hover{
      background-color: blue;
 }
+#background{
+	background-color:#fefaf8; 
+}
+#map{
+	width: 100%;
+	height: 400px;
+	justify-content:center;
+}
+p{
+	color:white;
+}
+.footer-copyright{
+	color: white;
+}
+#background{
+	background-color:#dc932c;
+}
